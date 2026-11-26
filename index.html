@@ -46,16 +46,10 @@
     .preview:hover img { border-color: var(--link); }
     .authors, .venue, .links { font-size: .9rem; }
     .links { display: flex; flex-wrap: wrap; gap: .2rem .9rem; margin-top: .4rem; }
-    .news { margin: 0; padding: 0; list-style: none; }
-    .news li { display: grid; grid-template-columns: 6.5rem minmax(0, 1fr); gap: .65rem; border-top: 1px solid var(--line); padding: .75rem 0; }
-    .news time { font-size: .85rem; color: var(--muted); font-variant-numeric: tabular-nums; }
     @media (max-width: 720px) {
       .wrapper { width: calc(100% - 2rem); }
       .page-layout { grid-template-columns: minmax(0, 1fr); gap: 2.2rem; margin-top: 1.8rem; }
       .profile-links { flex-direction: row; flex-wrap: wrap; gap: .4rem 1rem; }
-    }
-    @media (max-width: 380px) {
-      .news li { grid-template-columns: minmax(0, 1fr); gap: .16rem; }
     }
   </style>
 </head>
@@ -170,16 +164,6 @@
       </section>
       <section aria-labelledby="news">
         <h2 id="news">News</h2>
-        <ul class="news">
-          <li>
-            <time datetime="2026-10">October 2026</time>
-            <p>Our <a href="#scifactcheck">SciFactCheck paper</a> appeared in the EMNLP 2026 proceedings.</p>
-          </li>
-          <li>
-            <time datetime="2026-05">May 2026</time>
-            <p>Our <a href="#scientific-t5">scientific T5 paper</a> appeared at the NSLP workshop at LREC 2026.</p>
-          </li>
-        </ul>
       </section>
     </main>
   </div>
