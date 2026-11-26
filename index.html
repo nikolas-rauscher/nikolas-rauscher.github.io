@@ -13,9 +13,16 @@
     main { max-width: 42rem; margin: clamp(3.5rem, 11vw, 7rem) auto 4rem; padding: 0 1.5rem; }
     header { margin-bottom: 3rem; }
     h1 { margin: 0 0 .45rem; font-size: clamp(2rem, 7vw, 3rem); line-height: 1.15; letter-spacing: -.04em; }
-    h2 { margin: 0 0 .35rem; font-size: 1.15rem; }
+    h2 { margin: 0 0 .85rem; font-size: 1.2rem; }
+    h3 { margin: 0 0 .22rem; font-size: 1rem; line-height: 1.4; }
     p { margin: 0; color: #4b555b; }
+    a { color: #205c70; text-underline-offset: .16em; }
+    a:hover { color: #133f4d; }
     section { border-top: 1px solid #d9dfe2; padding: 1rem 0 1.2rem; }
+    article { margin-bottom: 1.45rem; }
+    article:last-child { margin-bottom: 0; }
+    .authors, .venue, .links { font-size: .9rem; }
+    .links { display: flex; flex-wrap: wrap; gap: .2rem 1rem; margin-top: .3rem; }
   </style>
 </head>
 <body>
@@ -26,11 +33,61 @@
     </header>
     <section aria-labelledby="publications">
       <h2 id="publications">Publications</h2>
-      <p>Coming soon.</p>
+      <article id="scientific-t5">
+        <h3><a href="https://aclanthology.org/2026.nslp-1.26/">Transferring Scientific English Pre-Trained Language Models to Multiple Languages Using Cross-Lingual Transfer</a></h3>
+        <p class="authors"><strong>Nikolas Rauscher</strong>, Fabio Barth, Georg Rehm</p>
+        <p class="venue"><em>Natural Scientific Language Processing Workshop at LREC 2026</em></p>
+        <p class="links">
+          <a href="https://aclanthology.org/2026.nslp-1.26.pdf">PDF</a>
+          <a href="https://github.com/nikolas-rauscher/scientific-english-crosslingual-transfer">Code</a>
+          <a href="https://github.com/nikolas-rauscher/scientific-english-crosslingual-transfer#released-models">Models</a>
+          <a href="https://huggingface.co/datasets/rausch/scientific_corpus_cleaned">Training corpus (gated)</a>
+          <a href="https://aclanthology.org/2026.nslp-1.26.bib">BibTeX</a>
+        </p>
+      </article>
+      <article id="scifactcheck">
+        <h3><a href="https://aclanthology.org/2026.emnlp-main.610/">Does Finetuning with Scientific Data Increase Hallucinations? A Multi-domain Factuality Evaluation of LLMs</a></h3>
+        <p class="authors">Raia Abu Ahmad, <strong>Nikolas Rauscher</strong>, Ekaterina Borisova, Fabio Barth, Georg Rehm, Sebastian Möller</p>
+        <p class="venue"><em>EMNLP 2026</em></p>
+        <p class="links">
+          <a href="https://aclanthology.org/2026.emnlp-main.610.pdf">PDF</a>
+          <a href="https://github.com/ryabhmd/SciFactCheck">Code</a>
+          <a href="https://huggingface.co/datasets/rabuahmad/scifactcheck">Dataset</a>
+          <a href="https://aclanthology.org/2026.emnlp-main.610.bib">BibTeX</a>
+        </p>
+      </article>
+      <article id="scivqa">
+        <h3><a href="https://aclanthology.org/2025.sdp-1.18/">SciVQA 2025: Overview of the First Scientific Visual Question Answering Shared Task</a></h3>
+        <p class="authors">Ekaterina Borisova, <strong>Nikolas Rauscher</strong>, Georg Rehm</p>
+        <p class="venue"><em>Scholarly Document Processing Workshop at ACL 2025</em></p>
+        <p class="links">
+          <a href="https://aclanthology.org/2025.sdp-1.18.pdf">PDF</a>
+          <a href="https://github.com/esborisova/SciVQA">Code</a>
+          <a href="https://huggingface.co/datasets/katebor/SciVQA">Dataset</a>
+          <a href="https://aclanthology.org/2025.sdp-1.18.bib">BibTeX</a>
+        </p>
+      </article>
+      <article id="scholarly-qald">
+        <h3><a href="https://www.researchgate.net/publication/384066386_Large_Language_Models_for_Scholarly_Question_Answering_Using_Hybrid_Data_Sources">Large Language Models for Scholarly Question Answering Using Hybrid Data Sources</a></h3>
+        <p class="authors">Sefika Efeoglu, <strong>Nikolas Rauscher</strong>, Erik Rubinov, Yuxin Xue, Sonja Schimmler</p>
+        <p class="venue"><em>Scholarly QALD Challenge at ISWC 2024 (system paper)</em></p>
+        <p class="links">
+          <a href="https://github.com/nikolas-rauscher/ARDI-Scholarly-QALD">Code</a>
+          <a href="https://huggingface.co/wepolyu/KGQA-1">Model</a>
+          <a href="https://huggingface.co/datasets/rausch/cleaned-old-dataset-6000Q">Training dataset</a>
+          <a href="https://kgqa.github.io/scholarly-QALD-challenge/2024/">Challenge</a>
+          <a href="files/scholarly-qald.bib" download>BibTeX</a>
+        </p>
+      </article>
     </section>
     <section aria-labelledby="projects">
       <h2 id="projects">Projects</h2>
-      <p>Coming soon.</p>
+      <article id="remote-sensing">
+        <h3>Hallucination Mitigation for Change Captioning in Remote Sensing</h3>
+        <p class="authors">Isabella Benser, <strong>Nikolas Rauscher</strong>, Junqi Qin</p>
+        <p class="venue"><em>Remote Sensing Image Analysis, TU Berlin · 2026</em></p>
+        <p class="links"><a href="files/remote-sensing-change-captioning.pdf">Report (PDF)</a></p>
+      </article>
     </section>
   </main>
 </body>
